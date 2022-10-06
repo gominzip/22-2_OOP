@@ -44,21 +44,21 @@ void test_big_integer() {
 	// Add test
 	cout << endl << "[Add Test]" << endl;
 	cout << "1234567890 + 1234567899 = 2469135789 -> " << BigInteger(1234567899) + BigInteger(1234567890) << endl;
-	cout << "-1234567890 + -1234567899 = -246913578 -> " << BigInteger(-1234567899) + BigInteger(-1234567890) << endl;  // À½ + À½
-	cout << "1234567899 + 1234567890 = 2469135789 -> " << BigInteger("1234567890") + BigInteger("1234567899") << endl;  // ¹®ÀÚ¿­ ³Ö¾úÀ» ¶§ Å×½ºÆ®
-	cout << "9999 + -9999 = 0 -> " << BigInteger(-9999) + BigInteger(9999) << endl;  // À½ + ¾ç (Àı´ñ°ª °°À½)
-	cout << "123456 - 23967 = 99489 -> " << BigInteger(123456) + BigInteger(-23967) << endl;  // À½ + ¾ç > 0
-	cout << "-123456 + 23967 = -99489 -> " << BigInteger(-123456) + BigInteger(23967) << endl;  // À½ + ¾ç < 0
+	cout << "-1234567890 + -1234567899 = -2469135789 -> " << BigInteger(-1234567899) + BigInteger(-1234567890) << endl;  // ìŒ + ìŒ
+	cout << "1234567899 + 1234567890 = 2469135789 -> " << BigInteger("1234567890") + BigInteger("1234567899") << endl;  // ë¬¸ìì—´ ë„£ì—ˆì„ ë•Œ í…ŒìŠ¤íŠ¸
+	cout << "9999 + -9999 = 0 -> " << BigInteger(-9999) + BigInteger(9999) << endl;  // ìŒ + ì–‘ (ì ˆëŒ“ê°’ ê°™ìŒ)
+	cout << "123456 - 23967 = 99489 -> " << BigInteger(123456) + BigInteger(-23967) << endl;  // ìŒ + ì–‘ > 0
+	cout << "-123456 + 23967 = -99489 -> " << BigInteger(-123456) + BigInteger(23967) << endl;  // ìŒ + ì–‘ < 0
 
 	// Subtract test
 	cout << endl << "[Subtract Test]" << endl;
 	cout << "1234567899 - 1234567890 = 9 -> " << BigInteger(1234567899) - BigInteger(1234567890) << endl;
 	cout << "1234567890 - 1234567899 = -9 -> " << BigInteger(1234567890) - BigInteger(1234567899) << endl;
 	cout << "1234567899 - 1234567890 = 9 -> " << BigInteger("1234567899") - BigInteger("1234567890") << endl;
-	cout << "1234567899 - -1234567890 = 2469135789 -> " << BigInteger(1234567899) - BigInteger(-1234567890) << endl;  // ¾ç - À½
-	cout << "-1234567890 - 1234567899 = -2469135789 -> " << BigInteger(-1234567890) - BigInteger(1234567899) << endl;  // À½ - ¾ç
-	cout << "123456 - 23967 = 99489 -> " << BigInteger(123456) - BigInteger(23967) << endl;  // ¾ç - ¾ç
-	cout << "-123456 - -23967 = -99489 -> " << BigInteger(-123456) - BigInteger(-23967) << endl;  // À½ - À½
+	cout << "1234567899 - -1234567890 = 2469135789 -> " << BigInteger(1234567899) - BigInteger(-1234567890) << endl;  // ì–‘ - ìŒ
+	cout << "-1234567890 - 1234567899 = -2469135789 -> " << BigInteger(-1234567890) - BigInteger(1234567899) << endl;  // ìŒ - ì–‘
+	cout << "123456 - 23967 = 99489 -> " << BigInteger(123456) - BigInteger(23967) << endl;  // ì–‘ - ì–‘
+	cout << "-123456 - -23967 = -99489 -> " << BigInteger(-123456) - BigInteger(-23967) << endl;  // ìŒ - ìŒ
 
 	// Multiply test (Optional)
 	cout << endl << "[Multiply Test]" << endl;
